@@ -17,14 +17,24 @@ const JoinLobby: React.FC<JoinLobbyProps> = props => {
           type="text"
           value={accessCode}
           placeholder="Access code"
-          onChange={e => setAccessCode(e.target.value)}
+          onChange={e => {
+            const text = e.target.value;
+            if (text.length <= 30) {
+              setAccessCode(text);
+            }
+          }}
         />
         <input
           className="textfield"
           type="text"
           value={desiredName}
           placeholder="Your name"
-          onChange={e => setDesiredName(e.target.value)}
+          onChange={e => {
+            const text = e.target.value;
+            if (text.length <= 30) {
+              setDesiredName(text);
+            }
+          }}
         />
         <div
           style={{

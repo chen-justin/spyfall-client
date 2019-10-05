@@ -39,7 +39,10 @@ const CreateControls: React.FC<CreateControlsProps> = props => {
           placeholder="Your Name"
           value={displayName}
           onChange={e => {
-            setDisplayName(e.target.value);
+            const text = e.target.value;
+            if (text.length <= 30) {
+              setDisplayName(text);
+            }
           }}
         ></input>
         <div className="create-controls-locations-container">
@@ -52,7 +55,7 @@ const CreateControls: React.FC<CreateControlsProps> = props => {
                 value={Locations.SP1}
                 onChange={handleFormChange}
                 defaultChecked
-              />{" "}
+              />
               Spyfall 1 Locations
             </div>
             <div className="create-controls-radio">
@@ -61,7 +64,7 @@ const CreateControls: React.FC<CreateControlsProps> = props => {
                 name="loc"
                 value={Locations.SP2}
                 onChange={handleFormChange}
-              />{" "}
+              />
               Spyfall 2 Locations
             </div>
             <div className="create-controls-radio">
@@ -70,7 +73,7 @@ const CreateControls: React.FC<CreateControlsProps> = props => {
                 name="loc"
                 value={Locations.BOTH}
                 onChange={handleFormChange}
-              />{" "}
+              />
               Spyfall 1 and Spyfall 2 Locations
             </div>
             <div className="create-controls-radio">
@@ -79,7 +82,7 @@ const CreateControls: React.FC<CreateControlsProps> = props => {
                 name="loc"
                 value={Locations.CUSTOM}
                 onChange={handleFormChange}
-              />{" "}
+              />
               Custom
             </div>
           </form>
