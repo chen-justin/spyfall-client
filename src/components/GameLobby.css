@@ -1,0 +1,56 @@
+.game-lobby-access-line {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.game-lobby-access-code {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.player-list-container {
+    display: flex;
+    flex-direction: column;
+    border-top: rgb(140, 140, 140, 0.5) solid 1px;
+    border-bottom: rgb(140, 140, 140, 0.5) solid 1px;
+    padding: 2rem 0rem;
+    margin-bottom: 2rem;
+}
+
+.player-list-cell {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 0.5rem;
+    margin: 2px 0;
+}
+
+.player-list-cell-number{
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.player-list-player-name {
+    overflow: hidden;
+}
+
+.player-list-player-you {
+    font-weight: bold;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.player-list-you-edit-button {
+    align-self: flex-end;
+    flex-grow: 1;
+    text-align: right;
+}
+
+.name-edit-button {
+    width: auto;
+    border: none;
+    margin: 0;
+    padding: 0;
+}

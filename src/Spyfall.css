@@ -1,12 +1,5 @@
-
-button {
-    border:rgb(140, 140, 140, 0.7) solid 1px;
-    border-radius: 5px;
-    padding: 0.7rem 1.8rem;
-    margin: 0.2rem;
-    text-transform: uppercase;
-    font-family: 'Raleway';
-    width: 10rem;
+input {
+    font-size: 16px;
 }
 
 input:not([type='radio']):not([type='number']){
@@ -66,29 +59,6 @@ input[type='number']{
     margin-bottom: 7rem;
 }
 
-.create-controls {
-    display: flex;
-    flex-direction: column;
-    border-top: rgb(140, 140, 140, 0.5) solid 1px;
-    border-bottom: rgb(140, 140, 140, 0.5) solid 1px;
-    padding: 2rem 1rem;
-    margin-bottom: 7rem;
-    align-items: center;
-}
-
-.locations-container {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 0;
-}
-
-.locations-container > p {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    font-weight: bold;
-    text-align: center;
-}
-
 .join-controls {
     display: flex;
     flex-direction: column;
@@ -100,6 +70,22 @@ input[type='number']{
 .join-controls > input {
     margin: 0.5rem;
 }
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-container > button {
+    border:rgb(140, 140, 140, 0.7) solid 1px;
+    border-radius: 5px;
+    padding: 0.7rem 1.8rem;
+    margin: 0.2rem;
+    text-transform: uppercase;
+    font-family: 'Raleway';
+    width: 10rem;
+}
+
 
 @media (min-width: 500px) {
     .spyfall {
