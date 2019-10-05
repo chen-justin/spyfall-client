@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/spyfall-client/static/css/main.4b818e42.chunk.css",
-    "main.js": "/spyfall-client/static/js/main.1b90de4e.chunk.js",
-    "main.js.map": "/spyfall-client/static/js/main.1b90de4e.chunk.js.map",
+    "main.js": "/spyfall-client/static/js/main.9b3f9d4e.chunk.js",
+    "main.js.map": "/spyfall-client/static/js/main.9b3f9d4e.chunk.js.map",
     "runtime-main.js": "/spyfall-client/static/js/runtime-main.7e1a9065.js",
     "runtime-main.js.map": "/spyfall-client/static/js/runtime-main.7e1a9065.js.map",
     "static/js/2.e981b2d6.chunk.js": "/spyfall-client/static/js/2.e981b2d6.chunk.js",
     "static/js/2.e981b2d6.chunk.js.map": "/spyfall-client/static/js/2.e981b2d6.chunk.js.map",
     "index.html": "/spyfall-client/index.html",
-    "precache-manifest.6f219231af588aea3e491ec144034513.js": "/spyfall-client/precache-manifest.6f219231af588aea3e491ec144034513.js",
+    "precache-manifest.c7669034fa4ceea0e16fc2c26652831f.js": "/spyfall-client/precache-manifest.c7669034fa4ceea0e16fc2c26652831f.js",
     "service-worker.js": "/spyfall-client/service-worker.js",
     "static/css/main.4b818e42.chunk.css.map": "/spyfall-client/static/css/main.4b818e42.chunk.css.map"
   },
@@ -16,6 +16,6 @@
     "static/js/runtime-main.7e1a9065.js",
     "static/js/2.e981b2d6.chunk.js",
     "static/css/main.4b818e42.chunk.css",
-    "static/js/main.1b90de4e.chunk.js"
+    "static/js/main.9b3f9d4e.chunk.js"
   ]
 }
