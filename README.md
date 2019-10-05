@@ -4,4 +4,5 @@
 
 - General UI improvements and responsiveness.
 - Look into fixing responsiveness for mobile and smaller-screen devices.
-- Look into ability to copy contents of room codes into clipboard with a button.
+- ~~Look into ability to copy contents of room codes into clipboard with a button.~~ DONE
+- ~~Ability to change name in lobby~~ DONE
