@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/spyfall-client/static/css/main.15f20e71.chunk.css",
-    "main.js": "/spyfall-client/static/js/main.ea2d46dc.chunk.js",
-    "main.js.map": "/spyfall-client/static/js/main.ea2d46dc.chunk.js.map",
+    "main.css": "/spyfall-client/static/css/main.4b818e42.chunk.css",
+    "main.js": "/spyfall-client/static/js/main.1b90de4e.chunk.js",
+    "main.js.map": "/spyfall-client/static/js/main.1b90de4e.chunk.js.map",
     "runtime-main.js": "/spyfall-client/static/js/runtime-main.7e1a9065.js",
     "runtime-main.js.map": "/spyfall-client/static/js/runtime-main.7e1a9065.js.map",
-    "static/js/2.0dbdd8a9.chunk.js": "/spyfall-client/static/js/2.0dbdd8a9.chunk.js",
-    "static/js/2.0dbdd8a9.chunk.js.map": "/spyfall-client/static/js/2.0dbdd8a9.chunk.js.map",
+    "static/js/2.e981b2d6.chunk.js": "/spyfall-client/static/js/2.e981b2d6.chunk.js",
+    "static/js/2.e981b2d6.chunk.js.map": "/spyfall-client/static/js/2.e981b2d6.chunk.js.map",
     "index.html": "/spyfall-client/index.html",
-    "precache-manifest.1825d1780d4d3829f0592733fca11a3c.js": "/spyfall-client/precache-manifest.1825d1780d4d3829f0592733fca11a3c.js",
+    "precache-manifest.6f219231af588aea3e491ec144034513.js": "/spyfall-client/precache-manifest.6f219231af588aea3e491ec144034513.js",
     "service-worker.js": "/spyfall-client/service-worker.js",
-    "static/css/main.15f20e71.chunk.css.map": "/spyfall-client/static/css/main.15f20e71.chunk.css.map"
+    "static/css/main.4b818e42.chunk.css.map": "/spyfall-client/static/css/main.4b818e42.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.7e1a9065.js",
-    "static/js/2.0dbdd8a9.chunk.js",
-    "static/css/main.15f20e71.chunk.css",
-    "static/js/main.ea2d46dc.chunk.js"
+    "static/js/2.e981b2d6.chunk.js",
+    "static/css/main.4b818e42.chunk.css",
+    "static/js/main.1b90de4e.chunk.js"
   ]
 }
