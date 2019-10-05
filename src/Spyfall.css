@@ -4,8 +4,7 @@ input {
 
 input:not([type='radio']):not([type='number']){
     font-family: 'Raleway';
-    border: none;
-    border:rgb(140, 140, 140, 0.7) solid 1px;
+    border:rgba(140, 140, 140, 0.5) solid 1px;
     border-radius: 5px;
     padding: 1rem;
 }
@@ -22,26 +21,25 @@ input[type='number']{
     width: 2.5rem;
     height: 2.5rem;
     text-align: center;
-    border:rgb(140, 140, 140, 0.7) solid 1px;
+    border:rgba(140, 140, 140, 0.5) solid 1px;
     border-radius: 5px;
     -moz-appearance: textfield
 }
 
 .spyfall-wrapper {
     display: flex;
-    justify-content: center;
-    align-content: center;
-    overflow: none;
-    height: 100vh;
+    height: 100%;
     color: #3f3f3f;
+    align-items: center;
+    justify-content: center;
 }
 
 .spyfall {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin: auto;
     width: 100%;
-    margin: 2rem;
+    padding: 2rem;
 }
 
 .title {
@@ -54,16 +52,16 @@ input[type='number']{
     display: flex;
     justify-content: center;
     padding: 2rem 0;
-    border-top: rgb(140, 140, 140, 0.5) solid 1px;
-    border-bottom: rgb(140, 140, 140, 0.5) solid 1px;
-    margin-bottom: 7rem;
+    border-top: rgba(200, 200, 200, 0.5) solid 1px;
+    border-bottom: rgba(200, 200, 200, 0.5) solid 1px;
+    margin-bottom: 6rem;
 }
 
 .join-controls {
     display: flex;
     flex-direction: column;
-    border-top: rgb(140, 140, 140, 0.5) solid 1px;
-    border-bottom: rgb(140, 140, 140, 0.5) solid 1px;
+    border-top: rgba(200, 200, 200, 0.5) solid 1px;
+    border-bottom: rgba(200, 200, 200, 0.5) solid 1px;
     padding: 2rem 1rem;
 }
 
@@ -77,7 +75,7 @@ input[type='number']{
 }
 
 .button-container > button {
-    border:rgb(140, 140, 140, 0.7) solid 1px;
+    border:rgba(140, 140, 140, 0.5) solid 1px;
     border-radius: 5px;
     padding: 0.7rem 1.8rem;
     margin: 0.2rem;
@@ -87,9 +85,9 @@ input[type='number']{
 }
 
 
-@media (min-width: 500px) {
+@media (min-width: 800px) {
     .spyfall {
-        max-width: 500px;
+        max-width: 800px;
     }
 }
 

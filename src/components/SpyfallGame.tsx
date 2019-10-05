@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { SpyfallPayload } from '../models/SpyfallPayload';
 import './SpyfallGame.css';
-import { getStringDiff } from 'jest-diff';
 
 interface SpyfallGameProps {
     userID: string
@@ -37,6 +36,7 @@ const SpyfallGame: React.FC<SpyfallGameProps> = (props) => {
         return () => {
             clearInterval(interval);
         };
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [payload.inSession, time])
 
     const minutesRem = Math.floor(time/60);

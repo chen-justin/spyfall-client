@@ -4,11 +4,16 @@ body {
   font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
 }
 
 p {
   margin: 0;
   padding: 0;
+}
+
+#root {
+  height: 100%;
 }
 
 code {
