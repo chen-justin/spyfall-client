@@ -1,94 +1,89 @@
 input {
-    font-size: 16px;
+  font-size: 16px;
+  font-family: "Raleway";
 }
 
-input:not([type='radio']):not([type='number']){
-    font-family: 'Raleway';
-    border:rgba(140, 140, 140, 0.5) solid 1px;
-    border-radius: 5px;
-    padding: 1rem;
+input[type="radio"] {
+  height: 2em;
+  width: 2em;
+  margin-right: 10px;
 }
 
-input[type='radio']{
-    height: 2em;
-    width: 2em;
-    margin-right: 10px;
-    
+input[type="number"] {
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  border: rgba(140, 140, 140, 0.5) solid 1px;
+  border-radius: 5px;
+  -moz-appearance: textfield;
 }
 
-input[type='number']{
-    font-family: 'Raleway';
-    width: 2.5rem;
-    height: 2.5rem;
-    text-align: center;
-    border:rgba(140, 140, 140, 0.5) solid 1px;
-    border-radius: 5px;
-    -moz-appearance: textfield
+.textfield {
+  border: rgba(140, 140, 140, 0.5) solid 1px;
+  border-radius: 5px;
+  padding: 1rem;
 }
 
 .spyfall-wrapper {
-    display: flex;
-    height: 100%;
-    color: #3f3f3f;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  height: 100%;
+  color: #3f3f3f;
+  align-items: center;
+  justify-content: center;
 }
 
 .spyfall {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 100%;
-    padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  padding: 2rem;
 }
 
 .title {
-    font-size: 1.8rem;
-    text-align: center;
-    margin-bottom: 2rem;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .controls {
-    display: flex;
-    justify-content: center;
-    padding: 2rem 0;
-    border-top: rgba(200, 200, 200, 0.5) solid 1px;
-    border-bottom: rgba(200, 200, 200, 0.5) solid 1px;
-    margin-bottom: 6rem;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  border-top: rgba(200, 200, 200, 0.5) solid 1px;
+  border-bottom: rgba(200, 200, 200, 0.5) solid 1px;
+  margin-bottom: 6rem;
 }
 
 .join-controls {
-    display: flex;
-    flex-direction: column;
-    border-top: rgba(200, 200, 200, 0.5) solid 1px;
-    border-bottom: rgba(200, 200, 200, 0.5) solid 1px;
-    padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  border-top: rgba(200, 200, 200, 0.5) solid 1px;
+  border-bottom: rgba(200, 200, 200, 0.5) solid 1px;
+  padding: 2rem 1rem;
 }
 
 .join-controls > input {
-    margin: 0.5rem;
+  margin: 0.5rem;
 }
 
 .button-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .button-container > button {
-    border:rgba(140, 140, 140, 0.5) solid 1px;
-    border-radius: 5px;
-    padding: 0.7rem 1.8rem;
-    margin: 0.2rem;
-    text-transform: uppercase;
-    font-family: 'Raleway';
-    width: 10rem;
+  border: rgba(140, 140, 140, 0.5) solid 1px;
+  border-radius: 5px;
+  padding: 0.7rem 1.8rem;
+  margin: 0.2rem;
+  text-transform: uppercase;
+  font-family: "Raleway";
+  width: 10rem;
 }
-
 
 @media (min-width: 800px) {
-    .spyfall {
-        max-width: 800px;
-    }
+  .spyfall {
+    max-width: 800px;
+  }
 }
-
-
