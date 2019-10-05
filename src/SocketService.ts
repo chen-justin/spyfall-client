@@ -9,7 +9,7 @@ export class SocketService {
 
   public init (): SocketService {
     //Edit this when deployed.
-    this.socket = io('localhost:8080');
+    this.socket = io('https://ramblr.herokuapp.com/');
     return this;
   }
 
