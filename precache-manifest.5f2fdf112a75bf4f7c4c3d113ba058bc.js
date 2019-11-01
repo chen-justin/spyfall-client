@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e67debcf8e65b538087b9bf1ef88aa63",
+    "revision": "32fe21005254479595d327a91dc670f9",
     "url": "/spyfall-client/index.html"
   },
   {
-    "revision": "1ba3b1674b2525788b7e",
+    "revision": "0fe619b5b453bebb5703",
     "url": "/spyfall-client/static/css/main.4b818e42.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/spyfall-client/static/js/2.e981b2d6.chunk.js"
   },
   {
-    "revision": "1ba3b1674b2525788b7e",
-    "url": "/spyfall-client/static/js/main.9b3f9d4e.chunk.js"
+    "revision": "0fe619b5b453bebb5703",
+    "url": "/spyfall-client/static/js/main.65129509.chunk.js"
   },
   {
     "revision": "bed5fe5251e7a8c2be14",
