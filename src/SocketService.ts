@@ -10,7 +10,7 @@ export class SocketService {
   public init(): SocketService {
     //Edit this when deployed.
     this.socket = io("https://ramblr.herokuapp.com/");
-    // this.socket = io('localhost:8080');
+    // this.socket = io("localhost:8080");
     return this;
   }
 
@@ -22,8 +22,12 @@ export class SocketService {
     this.socket.emit(SpyfallEvent.JOIN, room, desiredName);
   }
 
-  public createRoom(config: SpyfallRoomConfig, desiredName: string) {
-    this.socket.emit(SpyfallEvent.CREATEROOM, config, desiredName);
+  public createRoom(
+    config: SpyfallRoomConfig,
+    desiredName: string,
+    locations: string[]
+  ) {
+    this.socket.emit(SpyfallEvent.CREATEROOM, config, desiredName, locations);
   }
 
   public startGame(roomName: string) {

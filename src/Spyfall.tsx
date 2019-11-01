@@ -24,6 +24,7 @@ const Spyfall: React.FC = () => {
     awaitPayload.subscribe((payload: SpyfallPayload) => {
       setUserID(context.getID());
       setGamePayload(payload);
+      console.log(payload);
       if (payload.inSession) {
         setGameState(GameState.INGAME);
       } else {
@@ -34,7 +35,7 @@ const Spyfall: React.FC = () => {
     return function cleanup() {
       context.disconnect();
     };
-  }, []);
+  }, [context]);
 
   const controls = (
     <>
@@ -63,9 +64,14 @@ const Spyfall: React.FC = () => {
   const handleCreateSubmit = (
     desiredName: string,
     lState: Locations,
-    desiredDuration: number
+    desiredDuration: number,
+    locations: string[]
   ) => {
-    context.createRoom(createRoomConfig(desiredDuration, lState), desiredName);
+    context.createRoom(
+      createRoomConfig(desiredDuration, lState),
+      desiredName,
+      locations
+    );
   };
 
   const handleLeave = () => {

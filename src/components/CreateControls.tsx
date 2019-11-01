@@ -7,7 +7,8 @@ interface CreateControlsProps {
   onSubmit(
     desiredName: string,
     locationType: Locations,
-    roundLength: number
+    roundLength: number,
+    locations: string[]
   ): any;
 }
 
@@ -15,6 +16,7 @@ const CreateControls: React.FC<CreateControlsProps> = props => {
   const [displayName, setDisplayName] = useState("");
   const [locationState, setLocationState] = useState(Locations.SP1);
   const [desiredDuration, setDesiredDuration] = useState(8);
+  const [locations, setLocations] = useState("");
 
   const handleFormChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const target = event.target;
@@ -26,7 +28,14 @@ const CreateControls: React.FC<CreateControlsProps> = props => {
       //Handle errors somehow
       return;
     }
-    props.onSubmit(displayName, locationState, desiredDuration);
+    if (locationState === Locations.CUSTOM && locations !== "") {
+      const locs = locations.split(",");
+      if (locs.length > 0) {
+        props.onSubmit(displayName, locationState, desiredDuration, locs);
+      }
+    } else {
+      props.onSubmit(displayName, locationState, desiredDuration, []);
+    }
   };
 
   return (
@@ -47,7 +56,7 @@ const CreateControls: React.FC<CreateControlsProps> = props => {
         ></input>
         <div className="create-controls-locations-container">
           <p>Locations</p>
-          <form>
+          <form style={{ display: "flex", flexDirection: "column" }}>
             <div className="create-controls-radio">
               <input
                 type="radio"
@@ -85,6 +94,16 @@ const CreateControls: React.FC<CreateControlsProps> = props => {
               />
               Custom
             </div>
+            <input
+              className="create-controls-locations-input textfield"
+              type="text"
+              placeholder="Custom Locations"
+              value={locations}
+              onChange={e => {
+                const text = e.target.value;
+                setLocations(text);
+              }}
+            ></input>
           </form>
         </div>
         <div className="create-controls-container">
